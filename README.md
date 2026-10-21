@@ -1,6 +1,6 @@
 # 💼 MyCV - Hồ Sơ Năng Lực Trực Tuyến & Chuẩn In Ấn
 
-> Trang CV & Portfolio cá nhân chuyên nghiệp của **Đặng Thành Công** (Cloud & Full-Stack Developer), được xây dựng bằng **HTML5 Semantic, CSS3 hiện đại và Vanilla JavaScript**.
+> Trang CV & Portfolio cá nhân chuyên nghiệp của **Ma Đình Tiến** (Cloud & Full-Stack Developer), được xây dựng bằng **HTML5 Semantic, CSS3 hiện đại và Vanilla JavaScript**.
 
 ![Preview](assets/avatar.jpg)
 
@@ -46,7 +46,7 @@ Chỉ cần nhấp đúp chuột vào file `index.html` hoặc mở bằng bất
 
 ## 👨‍💻 Thông tin tác giả
 
-- **Họ và tên:** Đặng Thành Công
+- **Họ và tên:** Ma Đình Tiến
 - **Email:** [dtc235200744@ictu.edu.vn](mailto:dtc235200744@ictu.edu.vn)
 - **Trường:** Đại học Công nghệ Thông tin & Truyền thông - Đại học Thái Nguyên (ICTU)
 - **GitHub:** [@dtc235200744-cloud](https://github.com/dtc235200744-cloud)

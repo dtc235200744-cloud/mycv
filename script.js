@@ -1,6 +1,6 @@
 /**
  * Modern CV / Portfolio Interactive Scripts
- * Author: Đặng Thành Công (dtc235200744-cloud)
+ * Author: Ma Đình Tiến (dtc235200744-cloud)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update document title and meta description
     if (lang === 'en') {
-      document.title = 'Resume - Dang Thanh Cong | Cloud & Full-Stack Developer';
+      document.title = 'Resume - Ma Dinh Tien | Cloud & Full-Stack Developer';
     } else {
-      document.title = 'CV - Đặng Thành Công | Cloud & Full-Stack Developer';
+      document.title = 'CV - Ma Đình Tiến | Cloud & Full-Stack Developer';
     }
 
     // Swap content for all elements with .lang-text class
@@ -127,6 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  console.log('%c💼 CV - Đặng Thành Công (dtc235200744-cloud)', 'font-size: 14px; font-weight: bold; color: #6366f1;');
+  console.log('%c💼 CV - Ma Đình Tiến (dtc235200744-cloud)', 'font-size: 14px; font-weight: bold; color: #6366f1;');
   console.log('GitHub: https://github.com/dtc235200744-cloud/mycv');
 });
