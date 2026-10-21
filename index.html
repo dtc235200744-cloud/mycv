@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark" data-lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Đặng Thành Công | Cloud & Full-Stack Developer</title>
+  <meta name="description" content="Hồ sơ năng lực chuyên nghiệp của Đặng Thành Công - Kỹ sư phần mềm, Chuyên viên Điện toán đám mây (Cloud & Full-Stack Developer). Tốt nghiệp ICTU.">
+  <meta name="keywords" content="CV, Resume, Dang Thanh Cong, Full-Stack Developer, Cloud Engineer, DevOps, ICTU, Web Developer">
+  <meta name="author" content="Đặng Thành Công">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="CV - Đặng Thành Công | Cloud & Full-Stack Developer">
+  <meta property="og:description" content="Khám phá hồ sơ năng lực, kỹ năng và các dự án nổi bật của Đặng Thành Công.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://dtc235200744-cloud.github.io/mycv/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+</head>
+<body>
+  <!-- Background Glow & Grid Ornaments -->
+  <div class="bg-decoration glow-top-left" aria-hidden="true"></div>
+  <div class="bg-decoration glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Floating Utility Bar -->
+  <aside class="floating-toolbar" aria-label="Thanh công cụ">
+    <div class="toolbar-pill">
+      <button id="themeToggleBtn" class="tool-btn" title="Chuyển giao diện Sáng / Tối" aria-label="Chuyển giao diện Sáng / Tối">
+        <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+        </svg>
+        <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+        </svg>
+        <span class="btn-text lang-text" data-vi="Giao diện" data-en="Theme">Giao diện</span>
+      </button>
+
+      <button id="langToggleBtn" class="tool-btn" title="Chuyển đổi Ngôn ngữ (VI / EN)" aria-label="Chuyển đổi Ngôn ngữ">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+        </svg>
+        <span id="langLabel" class="btn-text">EN</span>
+      </button>
+
+      <button id="printBtn" class="tool-btn btn-primary-pill" title="In hoặc Tải file PDF" aria-label="In hoặc Tải file PDF">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/>
+        </svg>
+        <span class="btn-text lang-text" data-vi="Xuất PDF" data-en="Print / PDF">Xuất PDF</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Container -->
+  <div class="cv-page-container">
+    <main class="cv-card" id="cvContent">
+      
+      <!-- HEADER / HERO SECTION -->
+      <header class="cv-header">
+        <div class="header-avatar-col">
+          <div class="avatar-wrapper">
+            <img src="assets/avatar.jpg" alt="Ảnh chân dung Đặng Thành Công" class="avatar-img" width="160" height="160">
+            <span class="status-indicator" title="Sẵn sàng làm việc (Open to opportunities)"></span>
+          </div>
+        </div>
+
+        <div class="header-info-col">
+          <div class="badge-row">
+            <span class="badge badge-accent">
+              <span class="pulse-dot"></span>
+              <span class="lang-text" data-vi="Sẵn sàng tiếp nhận cơ hội mới" data-en="Open to Work & Collaborations">Sẵn sàng tiếp nhận cơ hội mới</span>
+            </span>
+            <span class="badge badge-glass">GPA 3.52 / 4.0</span>
+          </div>
+
+          <h1 class="candidate-name">ĐẶNG THÀNH CÔNG</h1>
+          <p class="candidate-headline">
+            <span class="lang-text" data-vi="Kỹ Sư Phần Mềm & Điện Toán Đám Mây" data-en="Cloud & Full-Stack Software Engineer">Kỹ Sư Phần Mềm & Điện Toán Đám Mây</span>
+            <span class="headline-tag">Full-Stack / DevOps</span>
+          </p>
+
+          <p class="candidate-summary lang-text" 
+             data-vi="Sinh viên năm cuối ngành Công nghệ Thông tin tại Trường ĐH CNTT & Truyền thông (ICTU). Đam mê xây dựng hệ thống phần mềm mở rộng linh hoạt, tối ưu hóa cơ sở dữ liệu và tự động hóa quy trình triển khai CI/CD trên nền tảng Cloud (AWS/Docker)."
+             data-en="Final-year IT Student at Information & Communication Technology University (ICTU). Passionate about building scalable web systems, database performance optimization, and automating CI/CD pipelines on modern Cloud platforms (AWS/Docker).">
+            Sinh viên năm cuối ngành Công nghệ Thông tin tại Trường ĐH CNTT & Truyền thông (ICTU). Đam mê xây dựng hệ thống phần mềm mở rộng linh hoạt, tối ưu hóa cơ sở dữ liệu và tự động hóa quy trình triển khai CI/CD trên nền tảng Cloud (AWS/Docker).
+          </p>
+
+          <!-- Contact Matrix -->
+          <div class="contact-grid">
+            <a href="mailto:dtc235200744@ictu.edu.vn" class="contact-chip" id="emailContact" title="Gửi email hoặc nhấp để sao chép">
+              <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <span>dtc235200744@ictu.edu.vn</span>
+            </a>
+
+            <a href="tel:+84987654321" class="contact-chip" title="Gọi điện">
+              <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>(+84) 987 654 321</span>
+            </a>
+
+            <div class="contact-chip" title="Địa điểm">
+              <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span class="lang-text" data-vi="Thái Nguyên / Hà Nội, Việt Nam" data-en="Thai Nguyen / Hanoi, Vietnam">Thái Nguyên / Hà Nội, Việt Nam</span>
+            </div>
+
+            <a href="https://github.com/dtc235200744-cloud" target="_blank" rel="noopener noreferrer" class="contact-chip highlight-chip" title="Xem GitHub Profile">
+              <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
+              </svg>
+              <span>github.com/dtc235200744-cloud</span>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-chip" title="LinkedIn Profile">
+              <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+              <span>linkedin.com/in/thanhcong-dtc</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- TWO COLUMN BODY CONTENT -->
+      <div class="cv-body-grid">
+        
+        <!-- LEFT COLUMN: Skills, Education, Certs, Languages -->
+        <aside class="cv-sidebar-col">
+          
+          <!-- HỌC VẤN / EDUCATION -->
+          <section class="cv-section">
+            <h2 class="section-title">
+              <span class="section-icon">🎓</span>
+              <span class="lang-text" data-vi="Học Vấn" data-en="Education">Học Vấn</span>
+            </h2>
+
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="item-title lang-text" data-vi="ĐH Công Nghệ Thông Tin & Truyền Thông (ICTU)" data-en="Univ. of Information & Comm. Technology (ICTU)">ĐH Công Nghệ Thông Tin & Truyền Thông (ICTU)</h3>
+                <span class="item-date">2023 - 2027</span>
+              </div>
+              <div class="item-subtitle lang-text" data-vi="Kỹ sư Công nghệ Thông tin & Phần mềm" data-en="B.S. in Information Technology & Software Eng.">Kỹ sư Công nghệ Thông tin & Phần mềm</div>
+              <ul class="bullet-list">
+                <li><strong class="lang-text" data-vi="GPA tích lũy:" data-en="Cumulative GPA:">GPA tích lũy:</strong> 3.52 / 4.0 (Xếp loại Giỏi)</li>
+                <li class="lang-text" data-vi="Học bổng Khuyến khích Học tập loại Xuất sắc (Kỳ 1, Kỳ 2 & Kỳ 3)" data-en="Merit Scholarship for Outstanding Academic Performance (Sem 1, 2 & 3)">Học bổng Khuyến khích Học tập loại Xuất sắc (Kỳ 1, Kỳ 2 & Kỳ 3)</li>
+                <li class="lang-text" data-vi="Trưởng nhóm nghiên cứu giải pháp Điện toán đám mây sinh viên" data-en="Student Team Lead in Cloud Computing research lab">Trưởng nhóm nghiên cứu giải pháp Điện toán đám mây sinh viên</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- KỸ NĂNG CHUYÊN MÔN / TECHNICAL SKILLS -->
+          <section class="cv-section">
+            <h2 class="section-title">
+              <span class="section-icon">⚡</span>
+              <span class="lang-text" data-vi="Kỹ Năng Chuyên Môn" data-en="Technical Skills">Kỹ Năng Chuyên Môn</span>
+            </h2>
+
+            <!-- Skill Group: Languages -->
+            <div class="skill-category">
+              <h3 class="skill-category-title lang-text" data-vi="Ngôn ngữ lập trình" data-en="Programming Languages">Ngôn ngữ lập trình</h3>
+              <div class="tags-wrapper">
+                <span class="tag tag-highlight">JavaScript (ES6+)</span>
+                <span class="tag tag-highlight">TypeScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">SQL</span>
+              </div>
+            </div>
+
+            <!-- Skill Group: Backend & Database -->
+            <div class="skill-category">
+              <h3 class="skill-category-title lang-text" data-vi="Backend & Cơ sở dữ liệu" data-en="Backend & Databases">Backend & Cơ sở dữ liệu</h3>
+              <div class="tags-wrapper">
+                <span class="tag tag-highlight">Node.js / Express</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag tag-highlight">PostgreSQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Redis (Caching)</span>
+                <span class="tag">RESTful APIs</span>
+              </div>
+            </div>
+
+            <!-- Skill Group: Cloud & DevOps -->
+            <div class="skill-category">
+              <h3 class="skill-category-title lang-text" data-vi="Cloud & DevOps & Tools" data-en="Cloud, DevOps & Tools">Cloud & DevOps & Tools</h3>
+              <div class="tags-wrapper">
+                <span class="tag tag-highlight">Docker / Docker Compose</span>
+                <span class="tag tag-highlight">AWS (EC2, S3, RDS)</span>
+                <span class="tag">Git & GitHub Actions (CI/CD)</span>
+                <span class="tag">Linux / Bash Scripting</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">Postman</span>
+              </div>
+            </div>
+
+            <!-- Skill Group: Frontend -->
+            <div class="skill-category">
+              <h3 class="skill-category-title lang-text" data-vi="Frontend Development" data-en="Frontend Development">Frontend Development</h3>
+              <div class="tags-wrapper">
+                <span class="tag">React.js</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Responsive UI/UX</span>
+                <span class="tag">Vite</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- CHỨNG CHỈ & GIẢI THƯỞNG / CERTIFICATIONS -->
+          <section class="cv-section">
+            <h2 class="section-title">
+              <span class="section-icon">🏆</span>
+              <span class="lang-text" data-vi="Chứng Chỉ & Giải Thưởng" data-en="Certifications & Honors">Chứng Chỉ & Giải Thưởng</span>
+            </h2>
+
+            <div class="cert-item">
+              <div class="cert-bullet"></div>
+              <div>
+                <div class="cert-name">AWS Certified Cloud Practitioner (Foundational)</div>
+                <div class="cert-sub">Amazon Web Services • 2025</div>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-bullet"></div>
+              <div>
+                <div class="cert-name lang-text" data-vi="Giải Ba Nghiên Cứu Khoa Học Sinh Viên ICTU" data-en="3rd Prize - ICTU Student Scientific Research">Giải Ba Nghiên Cứu Khoa Học Sinh Viên ICTU</div>
+                <div class="cert-sub lang-text" data-vi="Đề tài: Tối ưu hóa phân tán với Docker & Microservices • 2025" data-en="Topic: Distributed Optimization with Docker & Microservices • 2025">Đề tài: Tối ưu hóa phân tán với Docker & Microservices • 2025</div>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-bullet"></div>
+              <div>
+                <div class="cert-name">TOEIC 750 / English for IT</div>
+                <div class="cert-sub lang-text" data-vi="Thành thạo đọc hiểu tài liệu kỹ thuật & giao tiếp" data-en="Fluent technical reading, writing & team communication">Thành thạo đọc hiểu tài liệu kỹ thuật & giao tiếp</div>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-bullet"></div>
+              <div>
+                <div class="cert-name lang-text" data-vi="Danh hiệu 'Sinh Viên 5 Tốt' Cấp Trường" data-en="University '5-Good Student' Award">Danh hiệu 'Sinh Viên 5 Tốt' Cấp Trường</div>
+                <div class="cert-sub">Đoàn Thanh Niên & Hội Sinh Viên ICTU • 2024 - 2025</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- NGOẠI NGỮ & KỸ NĂNG MỀM / LANGUAGES & SOFT SKILLS -->
+          <section class="cv-section">
+            <h2 class="section-title">
+              <span class="section-icon">🌐</span>
+              <span class="lang-text" data-vi="Ngoại Ngữ & Kỹ Năng Mềm" data-en="Languages & Soft Skills">Ngoại Ngữ & Kỹ Năng Mềm</span>
+            </h2>
+
+            <div class="lang-proficiency-list">
+              <div class="proficiency-row">
+                <span class="lang-name lang-text" data-vi="Tiếng Việt (Bản ngữ)" data-en="Vietnamese (Native)">Tiếng Việt (Bản ngữ)</span>
+                <span class="proficiency-level lang-text" data-vi="Bản ngữ" data-en="Native">Bản ngữ</span>
+              </div>
+              <div class="proficiency-row">
+                <span class="lang-name lang-text" data-vi="Tiếng Anh (Chuyên ngành)" data-en="English (Professional)">Tiếng Anh (Chuyên ngành)</span>
+                <span class="proficiency-level">TOEIC 750 / B2</span>
+              </div>
+            </div>
+
+            <div class="soft-skills-cloud">
+              <span class="soft-pill lang-text" data-vi="Tư duy logic & giải quyết vấn đề" data-en="Problem Solving">Tư duy logic & giải quyết vấn đề</span>
+              <span class="soft-pill lang-text" data-vi="Làm việc nhóm (Scrum/Agile)" data-en="Agile / Scrum">Làm việc nhóm (Scrum/Agile)</span>
+              <span class="soft-pill lang-text" data-vi="Tự nghiên cứu công nghệ mới" data-en="Fast Learner">Tự nghiên cứu công nghệ mới</span>
+              <span class="soft-pill lang-text" data-vi="Quản lý thời gian hiệu quả" data-en="Time Management">Quản lý thời gian hiệu quả</span>
+            </div>
+          </section>
+
+        </aside>
+
+        <!-- RIGHT COLUMN: Experience, Projects -->
+        <main class="cv-main-col">
+          
+          <!-- KINH NGHIỆM LÀM VIỆC / WORK EXPERIENCE -->
+          <section class="cv-section">
+            <h2 class="section-title">
+              <span class="section-icon">💼</span>
+              <span class="lang-text" data-vi="Kinh Nghiệm Thực Tế" data-en="Work Experience">Kinh Nghiệm Thực Tế</span>
+            </h2>
+
+            <!-- Job 1 -->
+            <article class="exp-item">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role lang-text" data-vi="Thực tập sinh Phát triển Backend & Cloud" data-en="Backend & Cloud Developer Intern">Thực tập sinh Phát triển Backend & Cloud</h3>
+                  <div class="exp-company">TechNova Solutions • <span class="exp-location lang-text" data-vi="Hà Nội / Hybrid" data-en="Hanoi / Hybrid">Hà Nội / Hybrid</span></div>
+                </div>
+                <span class="exp-period">06/2025 - Hiện tại</span>
+              </div>
+
+              <ul class="bullet-list">
+                <li class="lang-text" 
+                    data-vi="Phối hợp cùng đội ngũ kỹ sư thiết kế và xây dựng các module RESTful API bằng <strong>Node.js, Express & TypeScript</strong> phục vụ hơn 15.000 người dùng hàng tháng." 
+                    data-en="Collaborated with senior engineers to design and develop core RESTful API modules using <strong>Node.js, Express & TypeScript</strong> serving 15,000+ monthly active users.">
+                  Phối hợp cùng đội ngũ kỹ sư thiết kế và xây dựng các module RESTful API bằng <strong>Node.js, Express & TypeScript</strong> phục vụ hơn 15.000 người dùng hàng tháng.
+                </li>
+                <li class="lang-text" 
+                    data-vi="Thiết kế chỉ mục (Index) và tinh chỉnh các câu truy vấn phức tạp trên <strong>PostgreSQL</strong>, giảm thời gian phản hồi API trung bình từ <strong>420ms xuống 115ms</strong> (giảm 72%)." 
+                    data-en="Optimized indexes and complex query executions in <strong>PostgreSQL</strong>, slashing average API response latency from <strong>420ms to 115ms</strong> (72% reduction).">
+                  Thiết kế chỉ mục (Index) và tinh chỉnh các câu truy vấn phức tạp trên <strong>PostgreSQL</strong>, giảm thời gian phản hồi API trung bình từ <strong>420ms xuống 115ms</strong> (giảm 72%).
+                </li>
+                <li class="lang-text" 
+                    data-vi="Đóng gói ứng dụng vào <strong>Docker Containers</strong> và thiết lập quy trình CI/CD tự động bằng <strong>GitHub Actions</strong> để deploy lên máy chủ thử nghiệm AWS EC2." 
+                    data-en="Containerized services into <strong>Docker</strong> containers and built automated CI/CD pipelines via <strong>GitHub Actions</strong> for continuous staging deployments on AWS EC2.">
+                  Đóng gói ứng dụng vào <strong>Docker Containers</strong> và thiết lập quy trình CI/CD tự động bằng <strong>GitHub Actions</strong> để deploy lên máy chủ thử nghiệm AWS EC2.
+                </li>
+                <li class="lang-text" 
+                    data-vi="Tích hợp bộ nhớ đệm <strong>Redis Cache</strong> cho các API tra cứu dữ liệu tần suất cao, giúp giảm 50% tải cho database chính trong giờ cao điểm." 
+                    data-en="Integrated <strong>Redis caching</strong> layers for high-frequency read endpoints, reducing primary database load by 50% during peak usage hours.">
+                  Tích hợp bộ nhớ đệm <strong>Redis Cache</strong> cho các API tra cứu dữ liệu tần suất cao, giúp giảm 50% tải cho database chính trong giờ cao điểm.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Job 2 -->
+            <article class="exp-item">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role lang-text" data-vi="Lập trình viên Web & Quản trị Hệ thống (Dự án Sinh viên & Freelance)" data-en="Web Developer & Systems Admin (Student Projects & Freelance)">Lập trình viên Web & Quản trị Hệ thống (Dự án Sinh viên & Freelance)</h3>
+                  <div class="exp-company">ICTU Tech Club & Freelance Client Projects</div>
+                </div>
+                <span class="exp-period">2024 - 2025</span>
+              </div>
+
+              <ul class="bullet-list">
+                <li class="lang-text" 
+                    data-vi="Phát triển hơn 4 trang web giới thiệu doanh nghiệp và cổng thông tin sinh viên với giao diện chuẩn Responsive, chuẩn SEO và đạt điểm Google Lighthouse 95+." 
+                    data-en="Built 4+ responsive web portals and landing sites achieving 95+ performance scores on Google Lighthouse.">
+                  Phát triển hơn 4 trang web giới thiệu doanh nghiệp và cổng thông tin sinh viên với giao diện chuẩn Responsive, chuẩn SEO và đạt điểm Google Lighthouse 95+.
+                </li>
+                <li class="lang-text" 
+                    data-vi="Quản trị VPS Linux Ubuntu, cấu hình Nginx Reverse Proxy, chứng chỉ SSL Let's Encrypt tự động gia hạn và bảo mật tường lửa UFW." 
+                    data-en="Managed Ubuntu Linux VPS instances, configured Nginx reverse proxies, automated SSL certificates via Let's Encrypt, and secured ports with UFW.">
+                  Quản trị VPS Linux Ubuntu, cấu hình Nginx Reverse Proxy, chứng chỉ SSL Let's Encrypt tự động gia hạn và bảo mật tường lửa UFW.
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <!-- DỰ ÁN NỔI BẬT / FEATURED PROJECTS -->
+          <section class="cv-section">
+            <h2 class="section-title">
+              <span class="section-icon">🚀</span>
+              <span class="lang-text" data-vi="Dự Án Tiêu Biểu" data-en="Featured Projects">Dự Án Tiêu Biểu</span>
+            </h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-top">
+                <div class="project-meta">
+                  <h3 class="project-name">Cloud-Native Microservices E-Commerce</h3>
+                  <div class="project-role lang-text" data-vi="Full-Stack Developer & Cloud Architect (Dự án cá nhân trọng điểm)" data-en="Full-Stack Developer & Cloud Architect (Personal Capstone)">Full-Stack Developer & Cloud Architect (Dự án cá nhân trọng điểm)</div>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/dtc235200744-cloud" target="_blank" rel="noopener noreferrer" class="link-btn" title="Mã nguồn GitHub">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Code
+                  </a>
+                  <a href="#" class="link-btn" title="Bản thử nghiệm Live Demo">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Demo
+                  </a>
+                </div>
+              </div>
+
+              <p class="project-desc lang-text"
+                 data-vi="Hệ thống bán hàng thương mại điện tử với kiến trúc Microservices tách biệt (Auth Service, Product Catalog, Order & Payment Service). Tích hợp cổng thanh toán trực tuyến, giỏ hàng thời gian thực và quản trị kho hàng."
+                 data-en="Scalable E-Commerce platform designed with distributed microservices architecture (Auth, Product Catalog, Order & Payments). Supports real-time cart syncing and online payment integrations.">
+                Hệ thống bán hàng thương mại điện tử với kiến trúc Microservices tách biệt (Auth Service, Product Catalog, Order & Payment Service). Tích hợp cổng thanh toán trực tuyến, giỏ hàng thời gian thực và quản trị kho hàng.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item lang-text" 
+                     data-vi="<strong>Tính năng:</strong> JWT Authentication, phân quyền RBAC, tích hợp thanh toán VnPay / Stripe Sandbox, thông báo realtime qua WebSocket."
+                     data-en="<strong>Features:</strong> JWT Auth, RBAC permissions, VnPay/Stripe payment sandbox, real-time notifications via WebSocket.">
+                  <strong>Tính năng:</strong> JWT Authentication, phân quyền RBAC, tích hợp thanh toán VnPay / Stripe Sandbox, thông báo realtime qua WebSocket.
+                </div>
+                <div class="highlight-item lang-text" 
+                     data-vi="<strong>Triển khai:</strong> Sử dụng Docker Compose để điều phối các services; CI/CD pipeline tự động build image và đẩy lên Docker Hub."
+                     data-en="<strong>Deployment:</strong> Multi-service Docker Compose orchestration; automated CI/CD pipeline pushing builds to Docker Hub.">
+                  <strong>Triển khai:</strong> Sử dụng Docker Compose để điều phối các services; CI/CD pipeline tự động build image và đẩy lên Docker Hub.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">AWS S3</span>
+                <span class="tech-pill">React</span>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-top">
+                <div class="project-meta">
+                  <h3 class="project-name">Smart Campus & Student Portal (ICTU Hub)</h3>
+                  <div class="project-role lang-text" data-vi="Trưởng nhóm phát triển & Lead Backend" data-en="Team Lead & Backend Architect">Trưởng nhóm phát triển & Lead Backend</div>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/dtc235200744-cloud" target="_blank" rel="noopener noreferrer" class="link-btn" title="GitHub">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+
+              <p class="project-desc lang-text"
+                 data-vi="Cổng thông tin hỗ trợ sinh viên quản lý thời khóa biểu học tập, lịch thi, kho tài liệu số môn học và diễn đàn thảo luận học thuật cho sinh viên ICTU."
+                 data-en="Student portal helping campus peers organize course schedules, exam dates, shared study resources, and academic discussion forums.">
+                Cổng thông tin hỗ trợ sinh viên quản lý thời khóa biểu học tập, lịch thi, kho tài liệu số môn học và diễn đàn thảo luận học thuật cho sinh viên ICTU.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item lang-text" 
+                     data-vi="<strong>Đạt giải:</strong> Giải Ba Nghiên cứu khoa học sinh viên cấp trường năm học 2024 - 2025."
+                     data-en="<strong>Award:</strong> 3rd Prize in University Student Scientific Research Contest (2024-2025).">
+                  <strong>Đạt giải:</strong> Giải Ba Nghiên cứu khoa học sinh viên cấp trường năm học 2024 - 2025.
+                </div>
+                <div class="highlight-item lang-text" 
+                     data-vi="<strong>Kết quả:</strong> Đã thử nghiệm phục vụ hơn 500 sinh viên truy cập trong mùa thi, uptime 99.8%."
+                     data-en="<strong>Impact:</strong> Deployed in beta testing for 500+ active students during exam periods with 99.8% uptime.">
+                  <strong>Kết quả:</strong> Đã thử nghiệm phục vụ hơn 500 sinh viên truy cập trong mùa thi, uptime 99.8%.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">Nginx</span>
+                <span class="tech-pill">Ubuntu VPS</span>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-top">
+                <div class="project-meta">
+                  <h3 class="project-name">MyCV & Interactive Online Resume</h3>
+                  <div class="project-role lang-text" data-vi="Tác giả (Mã nguồn mở trên GitHub)" data-en="Author (Open-Source on GitHub)">Tác giả (Mã nguồn mở trên GitHub)</div>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/dtc235200744-cloud/mycv" target="_blank" rel="noopener noreferrer" class="link-btn" title="GitHub Repository">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Repo
+                  </a>
+                  <a href="https://dtc235200744-cloud.github.io/mycv/" target="_blank" rel="noopener noreferrer" class="link-btn" title="GitHub Pages">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Live
+                  </a>
+                </div>
+              </div>
+
+              <p class="project-desc lang-text"
+                 data-vi="Trang hồ sơ năng lực cá nhân trực tuyến tối ưu hóa chuẩn SEO, tích hợp cơ chế song ngữ (VI / EN), chế độ Dark/Light Mode và định dạng CSS In ấn chuẩn khổ A4 sắc nét."
+                 data-en="Modern interactive personal resume web application with bilingual support (VI/EN), dark/light theme switching, and print-ready A4 CSS stylesheet.">
+                Trang hồ sơ năng lực cá nhân trực tuyến tối ưu hóa chuẩn SEO, tích hợp cơ chế song ngữ (VI / EN), chế độ Dark/Light Mode và định dạng CSS In ấn chuẩn khổ A4 sắc nét.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Semantic HTML5</span>
+                <span class="tech-pill">Modern CSS3</span>
+                <span class="tech-pill">Vanilla JavaScript</span>
+                <span class="tech-pill">Print Media Styles</span>
+                <span class="tech-pill">GitHub Pages</span>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- MỤC TIÊU NGHỀ NGHIỆP / CAREER OBJECTIVE -->
+          <section class="cv-section career-section">
+            <h2 class="section-title">
+              <span class="section-icon">🎯</span>
+              <span class="lang-text" data-vi="Mục Tiêu Nghề Nghiệp" data-en="Career Goals">Mục Tiêu Nghề Nghiệp</span>
+            </h2>
+
+            <div class="goal-grid">
+              <div class="goal-box">
+                <div class="goal-badge lang-text" data-vi="Ngắn hạn (1 - 2 năm)" data-en="Short-term (1-2 years)">Ngắn hạn (1 - 2 năm)</div>
+                <p class="goal-text lang-text" 
+                   data-vi="Trở thành Kỹ sư Phần mềm Full-Stack / Cloud vững chuyên môn, làm chủ hệ sinh thái AWS & Docker; đóng góp giá trị cao vào các dự án lớn tại doanh nghiệp công nghệ."
+                   data-en="Become a solid Full-Stack & Cloud Software Engineer mastering AWS and Docker; actively contribute to enterprise-scale technology products.">
+                  Trở thành Kỹ sư Phần mềm Full-Stack / Cloud vững chuyên môn, làm chủ hệ sinh thái AWS & Docker; đóng góp giá trị cao vào các dự án lớn tại doanh nghiệp công nghệ.
+                </p>
+              </div>
+
+              <div class="goal-box">
+                <div class="goal-badge lang-text" data-vi="Dài hạn (3 - 5 năm)" data-en="Long-term (3-5 years)">Dài hạn (3 - 5 năm)</div>
+                <p class="goal-text lang-text" 
+                   data-vi="Đạt chứng chỉ AWS Solutions Architect Professional, hướng tới vai trò Kỹ sư Trưởng (Lead Software/DevOps Engineer) và thiết kế kiến trúc phân tán quy mô lớn."
+                   data-en="Attain AWS Solutions Architect Professional certification, advancing towards a Lead Engineer or Cloud Solutions Architect designing resilient distributed systems.">
+                  Đạt chứng chỉ AWS Solutions Architect Professional, hướng tới vai trò Kỹ sư Trưởng (Lead Software/DevOps Engineer) và thiết kế kiến trúc phân tán quy mô lớn.
+                </p>
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="cv-footer">
+        <div class="footer-content">
+          <p class="footer-text">
+            © 2026 <strong>Đặng Thành Công (dtc235200744)</strong> • ICTU Alumni & Cloud Enthusiast
+          </p>
+          <div class="footer-links">
+            <a href="https://github.com/dtc235200744-cloud/mycv" target="_blank" rel="noopener noreferrer">
+              <span>github.com/dtc235200744-cloud/mycv</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Toast Notification (for copy action) -->
+  <div id="toastNotification" class="toast" role="status" aria-live="polite">
+    <svg class="toast-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">Đã sao chép địa chỉ email!</span>
+  </div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
+</html>
