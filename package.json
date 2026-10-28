@@ -1,0 +1,25 @@
+{
+  "name": "ruou-men-la-bang-phuc",
+  "version": "1.0.0",
+  "description": "Website giới thiệu và đặt mua Rượu Men Lá Bằng Phúc - Đặc sản Bắc Kạn",
+  "main": "worker.js",
+  "scripts": {
+    "start": "serve . -l 3000",
+    "dev": "serve . -l 3000",
+    "build:worker": "node build_worker.js",
+    "dev:worker": "wrangler dev",
+    "deploy": "node build_worker.js && wrangler deploy"
+  },
+  "keywords": [
+    "ruou-bang-phuc",
+    "ruou-men-la",
+    "dac-san-bac-kan",
+    "cloudflare-worker"
+  ],
+  "author": "Ma Đình Tiến",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "wrangler": "^4.151.3"
+  }
+}
